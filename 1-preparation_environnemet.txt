@@ -1,0 +1,87 @@
+Étapes pour commencer un projet avec Node.js, React, MongoDB et Git (débutant complet)
+Voici un guide pas à pas pour configurer votre environnement et démarrer un projet complet.
+
+1. Installer les outils nécessaires
+Assurez-vous que les outils suivants sont installés sur votre ordinateur. Si ce n’est pas le cas, suivez les liens pour les télécharger et les installer.
+
+Node.js et npm (Node Package Manager) :
+
+Téléchargez et installez depuis Node.js.
+Vérifiez l’installation :
+bash
+Copier le code
+node -v
+npm -v
+Git :
+
+Téléchargez et installez depuis Git.
+Vérifiez l’installation :
+bash
+Copier le code
+git --version
+Visual Studio Code (éditeur de code) :
+
+Téléchargez depuis Visual Studio Code.
+MongoDB :
+
+Vous l’avez déjà installé. Assurez-vous que le serveur MongoDB est démarré :
+bash
+Copier le code
+mongod
+2. Initialiser le projet
+Créer un dossier pour le projet :
+
+bash
+Copier le code
+mkdir movie-feedback-app
+cd movie-feedback-app
+Initialiser un projet Node.js :
+
+Exécutez :
+bash
+Copier le code
+npm init -y
+Cela crée un fichier package.json pour gérer les dépendances.
+Installer Express.js (backend) :
+
+Express est un framework pour construire des API avec Node.js :
+bash
+Copier le code
+npm install express
+Installer React (frontend) :
+
+React est une bibliothèque pour construire des interfaces utilisateur :
+bash
+Copier le code
+npx create-react-app client
+Installer Mongoose (interaction avec MongoDB) :
+
+Ajoutez Mongoose dans votre dossier principal :
+bash
+Copier le code
+npm install mongoose
+Installer Nodemon (pour recharger automatiquement le serveur) :
+
+bash
+Copier le code
+npm install --save-dev nodemon
+3. Configurer Git pour le projet
+Initialiser un dépôt Git local :
+
+bash
+Copier le code
+git init
+Créer un fichier .gitignore :
+
+Cela exclut les fichiers inutiles comme node_modules :
+bash
+Copier le code
+echo "node_modules/" >> .gitignore
+echo "client/node_modules/" >> .gitignore
+echo ".env" >> .gitignore
+Créer un premier commit :
+
+bash
+Copier le code
+git add .
+git commit -m "Initial commit: setup backend and frontend"
